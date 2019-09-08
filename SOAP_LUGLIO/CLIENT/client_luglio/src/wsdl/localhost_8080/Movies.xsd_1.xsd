@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://luglio_2019.mycompany.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://luglio_2019.mycompany.com/">
+
+<xs:element name="getMovieById" type="tns:getMovieById"></xs:element>
+
+<xs:element name="getMovieByIdResponse" type="tns:getMovieByIdResponse"></xs:element>
+
+<xs:element name="getMovies" type="tns:getMovies"></xs:element>
+
+<xs:element name="getMoviesResponse" type="tns:getMoviesResponse"></xs:element>
+
+<xs:complexType name="getMovies">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMoviesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMovieById">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMovieByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
